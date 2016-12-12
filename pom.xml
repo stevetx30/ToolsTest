@@ -39,6 +39,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.0.1</version>
+                <configuration>
+                    <targetJdk>1.7</targetJdk>
+                    <linkXref>false</linkXref>
+                    <failOnViolation>true</failOnViolation>
+                    <failurePriority>1</failurePriority>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
